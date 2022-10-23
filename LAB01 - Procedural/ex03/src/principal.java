@@ -520,33 +520,33 @@ public class principal {
 
         for (int i=0; i<8; i++) {
 
-            if (indicePreenchido>0 && i<7 && (repetidos[i]!=repetidos[i+1] || repetidos[i]==0&&repetidos[i+1]==0 || repetidos[i]!=0))
+            if (indicePreenchido>0 && repetidos[i]!=0 && i<7 && repetidos[i]!=repetidos[i+1])
                 System.out.printf("%d ", repetidos[i]);
 
-            else if (indicePreenchido>0 && i==7 && (repetidos[i]!=repetidos[i-1] || repetidos[i]==0&&repetidos[i-1]==0 || repetidos[i]!=0))
+            else if (indicePreenchido>0 && repetidos[i]!=0 && i==7 && repetidos[i]!=repetidos[i-1])
                 System.out.printf("%d ", repetidos[i]);
-
         }  
+
 
     }
 
     public static void main(String[] args) {
 
-        // ex01();
-        // ex02();
-        // ex03();
-        // ex04();
-        // ex05();
-        // ex06();
-        // ex07();
-        // ex08();
-        // ex09();
-        // ex10();
-        // ex11();
-        // ex12();
-        // ex13();
-        // ex14();
-        ex15();
+        ex01();
+        ex02();
+        ex03();
+        ex04();
+        ex05();
+        ex06();
+        ex07();
+        ex08();
+        ex09();
+        ex10();
+        ex11();
+        ex12();
+        ex13();
+        ex14();
+        // ex15();
         // ex16();
 
     }
