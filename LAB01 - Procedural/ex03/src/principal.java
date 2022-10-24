@@ -500,33 +500,88 @@ public class principal {
 
         sc.close();
         Arrays.sort(v);
-        int indicePreenchido=0;
+        int indicePreenchido=0, elementoRepetido=0;
 
-            for (int i=0; i<8; i++) {
+        for (int i=0; i<8; i++) {
                 
-                if (i<7 && v[i]==v[i+1])
-                {
-                    repetidos[i] = v[i];
+            if (i<7 && v[i]==v[i+1]) {
+
+                for (int j=0; j<(indicePreenchido+1); j++) { 
+                    if (v[i] == repetidos[j])
+                        elementoRepetido++;
+                }
+
+                if (elementoRepetido==0) {
+                    repetidos[indicePreenchido] = v[i];
                     indicePreenchido++;
                 }
 
-                else if (i==7 && v[i]==v[i-1]) {
-                    repetidos[i] = v[i];
+                else if (v[i]==0 && indicePreenchido==0) {
+                    repetidos[indicePreenchido] = v[i];
                     indicePreenchido++;
-                }         
+                }
+
+                elementoRepetido=0;
+
             }
+        }
 
         System.out.printf("Valores repetidos: ");
 
-        for (int i=0; i<8; i++) {
-
-            if (indicePreenchido>0 && repetidos[i]!=0 && i<7 && repetidos[i]!=repetidos[i+1])
-                System.out.printf("%d ", repetidos[i]);
-
-            else if (indicePreenchido>0 && repetidos[i]!=0 && i==7 && repetidos[i]!=repetidos[i-1])
-                System.out.printf("%d ", repetidos[i]);
+        for (int i=0; i<indicePreenchido; i++) {
+            System.out.printf("%d ", repetidos[i]);
         }  
 
+    }
+
+    public static void ex16() {
+
+        Scanner sc = new Scanner(System.in);
+        int[] v = new int[8];
+        int[] repetidos = new int[8];
+
+        System.out.println("<< Valores iguais >>");
+
+        for (int i=0; i<8; i++) {
+
+            System.out.printf("Entre com o número %d: ", i+1);
+            v[i] = sc.nextInt();
+
+        }
+
+        sc.close();
+        Arrays.sort(v);
+        int indicePreenchido=0, elementoRepetido=0;
+
+        for (int i=0; i<8; i++) {
+                
+            if (i<7 && v[i]==v[i+1]) {
+
+                for (int j=0; j<(indicePreenchido+1); j++) { 
+                    if (v[i] == repetidos[j])
+                        elementoRepetido++;
+                }
+
+                if (elementoRepetido==0) {
+                    repetidos[indicePreenchido] = v[i];
+                    indicePreenchido++;
+                }
+
+                else if (v[i]==0 && indicePreenchido==0) {
+                    repetidos[indicePreenchido] = v[i];
+                    indicePreenchido++;
+                }
+
+                elementoRepetido=0;
+
+            }
+        }
+
+        System.out.printf("Valores repetidos: ");
+
+        for (int i=0; i<indicePreenchido; i++) {
+            System.out.printf("%d ", repetidos[i]);
+        }  
 
     }
 
@@ -546,7 +601,7 @@ public class principal {
         ex12();
         ex13();
         ex14();
-        // ex15();
+        ex15();
         // ex16();
 
     }
