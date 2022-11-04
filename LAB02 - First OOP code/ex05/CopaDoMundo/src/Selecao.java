@@ -8,9 +8,10 @@ public class Selecao {
     public Selecao(String selecao, String tecnico) {
 
         Figurinha jogadores[] = new Figurinha[11];
+        String pais=null;
 
         for (int i=0; i<11; i++) {
-            jogadores[i] = new Figurinha("Argentina");
+            jogadores[i] = new Figurinha(pais);
         }
 
     }
