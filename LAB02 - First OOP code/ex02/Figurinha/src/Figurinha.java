@@ -54,4 +54,15 @@ public class Figurinha {
         this.pais = pais;
     }
 
+    public void printFigurinha() {
+
+        System.out.println();
+        System.out.printf("NOME: %s\n", getNome());
+        System.out.printf("DATA: %s\n", getData());
+        System.out.printf("ALTURA: %.2f\n", getAltura());
+        System.out.printf("PESO: %.2f\n", getPeso());
+        System.out.printf("PAIS: %s\n", getPais());
+        System.out.println();
+
+    }
 }

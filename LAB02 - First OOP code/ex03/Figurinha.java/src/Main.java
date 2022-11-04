@@ -28,9 +28,12 @@ public class Main {
         figurinhas[2].setPeso(81.0f);
         figurinhas[2].setPosicao("ATA");
         figurinhas[2].setPais("França");
-        
-        for(int j=0; j<3; j++) {
-            System.out.println(figurinhas[j]);
+
+        System.out.println();
+        for (int i=0; i<3; i++) {
+            System.out.println(figurinhas[i]);    
         }
+        System.out.println();
+     
     }           
 }

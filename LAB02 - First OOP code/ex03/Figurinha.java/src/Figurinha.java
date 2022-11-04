@@ -6,7 +6,7 @@ public class Figurinha {
     private float peso;
     private String posicao;
     private String pais;
-    
+
     public String getNome() {
         return nome;
     }
@@ -53,7 +53,7 @@ public class Figurinha {
     public void setPais (String pais) {
         this.pais = pais;
     }
-
+    
     @Override
     public String toString() {
         return "[NOME: " + nome + " | DATA: " + data + " | ALTURA: " + altura + " | PESO: " + peso + " | POSIÇÃO:"

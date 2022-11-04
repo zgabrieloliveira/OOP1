@@ -26,24 +26,9 @@ public class Main {
         thiagoSilva.setPosicao("ZAG");
         thiagoSilva.setPais("Brasil");
 
-        System.out.println();
-        System.out.printf("NOME: %s\n", neymarJr.getNome());
-        System.out.printf("DATA: %s\n", neymarJr.getData());
-        System.out.printf("ALTURA: %.2f\n", neymarJr.getAltura());
-        System.out.printf("PESO: %.2f\n", neymarJr.getPeso());
-        System.out.printf("PAIS: %s\n", neymarJr.getPais());
-        System.out.println();
-        System.out.printf("NOME: %s\n", viniJr.getNome());
-        System.out.printf("DATA: %s\n", viniJr.getData());
-        System.out.printf("ALTURA: %.2f\n", viniJr.getAltura());
-        System.out.printf("PESO: %.2f\n", viniJr.getPeso());
-        System.out.printf("PAIS: %s\n", viniJr.getPais());
-        System.out.println();
-        System.out.printf("NOME: %s\n", thiagoSilva.getNome());
-        System.out.printf("DATA: %s\n", thiagoSilva.getData());
-        System.out.printf("ALTURA: %.2f\n", thiagoSilva.getAltura());
-        System.out.printf("PESO: %.2f\n", thiagoSilva.getPeso());
-        System.out.printf("PAIS: %s\n", thiagoSilva.getPais());
-        System.out.println();
+        neymarJr.printFigurinha();
+        viniJr.printFigurinha();
+        thiagoSilva.printFigurinha();
+        
     }
 }
