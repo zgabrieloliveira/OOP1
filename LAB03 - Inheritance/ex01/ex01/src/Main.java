@@ -12,8 +12,6 @@ public class Main {
         Figurinha normal;
         FigurinhaExtra especial;
 
-        System.out.println("Trata-se de uma carta especial? (y/n)");
-        String confirma = sc.nextLine();
         System.out.println("\nDigite o nome do jogador:");
         nome = sc.nextLine();
         System.out.println("\nDigite a data de nascimento do jogador:");
@@ -23,12 +21,16 @@ public class Main {
         System.out.println("\nDigite o peso do jogador:");
         peso = sc.nextDouble();
         System.out.println("\nDigite a posicao do jogador:");
+        clearBuffer(sc);
         posicao = sc.nextLine();
         System.out.println("\nDigite o pais do jogador:");
         pais = sc.nextLine();
+        System.out.println("\nTrata-se de uma carta especial? (y/n)");
+        char confirma = sc.next().charAt(0);
 
-        if (confirma == "y") {
+        if (confirma == 'y') {
             System.out.println("\nDigite a categoria da carta (Legend ou Rookie): ");
+            clearBuffer(sc);
             categoria = sc.nextLine();
             System.out.println("\nDigite a cor da figurinha (Bordo, Bronze, Prata e Ouro):");
             cor = sc.nextLine();
@@ -40,5 +42,10 @@ public class Main {
             normal.mostrarFigurinha();
         }
         sc.close();
+    }
+    // classe p/ resolução de problemas na leitura de dados
+    private static void clearBuffer(Scanner sc) {
+        if (sc.hasNextLine())
+            sc.nextLine();
     }
 }

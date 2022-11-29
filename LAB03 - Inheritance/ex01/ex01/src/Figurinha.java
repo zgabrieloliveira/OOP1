@@ -17,7 +17,7 @@ public class Figurinha {
     }
 
     public void mostrarFigurinha() {
-        System.out.println("NOME: " + getNome());
+        System.out.println("\nNOME: " + getNome());
         System.out.println("DATA: " + getData());
         System.out.println("ALTURA: " + getAltura());
         System.out.println("PESO: " + getPeso());
