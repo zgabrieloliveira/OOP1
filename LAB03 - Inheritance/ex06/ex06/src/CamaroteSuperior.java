@@ -14,7 +14,7 @@ public class CamaroteSuperior extends VIP {
     }
 
     public void imprimeLocalizacao() {
-        System.out.println(localizacao);
+        System.out.println("LOCALIZACAO:" + localizacao);
     }
 
     public String getLocalizacao() {
