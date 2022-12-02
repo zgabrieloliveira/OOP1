@@ -35,7 +35,7 @@ public class Main {
             ingressoCamaroteSup.imprimeLocalizacao();
             break;
             default:
-            System.out.println("Por favor, escolha uma opcao válida entre 1 e 3!");
+            System.out.println("\n***Por favor, escolha uma opcao válida entre 1 e 3!***\n");
         }
 
         sc.close();
