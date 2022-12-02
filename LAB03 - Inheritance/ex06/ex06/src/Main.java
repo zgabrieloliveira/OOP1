@@ -8,16 +8,18 @@ public class Main {
         Scanner  sc = new Scanner(System.in);
         Normal ingressoNormal = new Normal(20.00);
         CamaroteInferior ingressoCamaroteInf = new CamaroteInferior(20.00, 15.00, "Fila H, Poltrona 42");
+        double valorCamInf = ingressoCamaroteInf.valorVIP(20.00, 15);
         CamaroteSuperior ingressoCamaroteSup = new CamaroteSuperior(20.00, 15.00, "Fila S, Poltrona 10", 20.00);
+        double valorCamSup = ingressoCamaroteSup.valorCamarote(20.00, 15.00, 20.00);
 
         System.out.println("------------------------------------------------");
         System.out.println("\nOLA! ESSAS SAO OPCOES DE INGRESSO:\n");
         System.out.println("1. NORMAL");
-        ingressoNormal.escreveValor();
+        ingressoNormal.escreveValor(20.00);
         System.out.println("2. VIP - CAMAROTE INFERIOR");
-        ingressoCamaroteInf.escreveValor();
+        ingressoCamaroteInf.escreveValor(valorCamInf);
         System.out.println("3. VIP - CAMAROTE SUPERIOR");
-        ingressoCamaroteSup.escreveValor();
+        ingressoCamaroteSup.escreveValor(valorCamSup);
         System.out.println("------------------------------------------------");
 
         System.out.println("\nQual ingresso deseja comprar? Digite o numero correspondente");
@@ -27,15 +29,16 @@ public class Main {
             case 1: System.out.println("\nParabens, ingresso NORMAL comprado!");
             break;
             case 2: System.out.println("\nParabens! Ingresso CAMAROTE INFERIOR comprado!");
-            System.out.printf("LOCALIZACAO: ");
             ingressoCamaroteInf.imprimeLocalizacao();
+            System.out.println();
             break;
             case 3: System.out.println("\nParabens! Ingresso CAMAROTE SUPERIOR comprado!");
-            System.out.printf("LOCALIZACAO: ");
             ingressoCamaroteSup.imprimeLocalizacao();
+            System.out.println();
             break;
             default:
             System.out.println("\n***Por favor, escolha uma opcao válida entre 1 e 3!***\n");
+            break;
         }
 
         sc.close();

@@ -2,8 +2,8 @@ public class Ingresso {
 
     private double valor;
 
-    public void escreveValor() {
-        System.out.printf("Valor: %.2f\n\n", valor);
+    public void escreveValor(double valor) {
+        System.out.printf("Valor: R$%.2f\n\n", valor);
     }
 
     public double getValor() {
