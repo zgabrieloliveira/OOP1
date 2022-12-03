@@ -34,7 +34,7 @@ public class CopaDoMundo {
         System.out.println("POSICAO: " + neymarJr.posicao);
         System.out.println("PAÍS: " + neymarJr.pais);
         System.out.println();
-        System.out.println("JOGADOR :" + viniJr.nome);
+        System.out.println("JOGADOR: " + viniJr.nome);
         System.out.println("DATA: " + viniJr.data);
         System.out.println("ALTURA: " + viniJr.altura);
         System.out.println("PESO: " + viniJr.peso);

@@ -10,10 +10,10 @@ public class C3 extends C2 {
 
     public C3(String genero, String nome, long cpf, int idade, String ocupacao, double patrimonio, String usuario, String email, String endereco) {
         super(genero, nome, cpf, idade, ocupacao, patrimonio);
+        System.out.println("Classe C3: chamada do construtor padrao, com parametros");
         this.usuario = usuario;
         this.email = email;
         this.endereco = endereco;
-        System.out.println("Classe C3: chamada do construtor padrao, com parametros");
     }
 
     public void mostrarAtributos() {
@@ -22,7 +22,7 @@ public class C3 extends C2 {
         System.out.println("IDADE: " + idade);
         System.out.println("CPF: " + getCpf());
         System.out.println("OCUPACAO: " + getOcupacao());
-        System.out.println("PATRIMONIO: " + getPatrimonio());
+        System.out.println("PATRIMONIO: R$" + getPatrimonio());
         System.out.println("USUARIO: " + usuario);
         System.out.println("EMAIL: " + getEmail());
         System.out.println("ENDERECO: " + getEndereco());

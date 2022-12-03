@@ -10,10 +10,10 @@ public class C2 extends C1 {
 
     public C2(String genero, String nome, long cpf, int idade, String ocupacao, double patrimonio) {
         super(genero, nome, cpf);
+        System.out.println("Classe C2: chamada do construtor padrao, com parametros");
         this.idade = idade;
         this.ocupacao = ocupacao;
         this.patrimonio = patrimonio;
-        System.out.println("Classe C2: chamada do construtor padrao, com parametros");
     }
 
     public void mostrarAtributos() {
@@ -22,7 +22,7 @@ public class C2 extends C1 {
         System.out.println("IDADE: " + idade);
         System.out.println("CPF: " + getCpf());
         System.out.println("OCUPACAO: " + getOcupacao());
-        System.out.println("PATRIMONIO: " + getPatrimonio());
+        System.out.println("PATRIMONIO: R$" + getPatrimonio());
     }
 
     public void mostrarAtributosSuper(String genero, String nome, long cpf, int idade, String ocupacao, double patrimonio) {

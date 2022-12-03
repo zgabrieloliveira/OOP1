@@ -43,7 +43,7 @@ public class Main {
         sc.close();
     }
 
-    // classe p/ resolução de problemas na leitura de dados
+    // método p/ resolução de problemas na leitura de dados
     private static void clearBuffer(Scanner sc) {
         if (sc.hasNextLine())
             sc.nextLine();

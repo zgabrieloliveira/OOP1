@@ -9,10 +9,10 @@ public class C1 {
     }
 
     public C1(String genero, String nome, long cpf) {
+        System.out.println("\nClasse C1: chamada do construtor padrao, com parametros");
         this.genero = genero;
         this.nome = nome;
         this.cpf = cpf;
-        System.out.println("Classe C1: chamada do construtor padrao, com parametros");
     }
 
     public void mostrarAtributos() {

@@ -65,4 +65,5 @@ public class Figurinha {
         System.out.println();
 
     }
+
 }
