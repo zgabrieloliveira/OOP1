@@ -4,17 +4,18 @@ public class CamaroteSuperior extends VIP {
     private double adicionalCamarote;
 
     public CamaroteSuperior(double valor, double adicional, String localizacao, double adicionalCamarote) {
-        super.setValor(super.getValor() + super.getAdicional() + adicionalCamarote); 
+        super(valor, adicional); 
         this.localizacao = localizacao;
+        this.adicionalCamarote = adicionalCamarote;
     }
 
     public double valorCamarote(double valor, double adicional, double adicionalCamarote) {
-        super.setValor(super.getValor() + super.getAdicional() + adicionalCamarote); 
+        super.setValor(valor + adicional + adicionalCamarote); 
         return super.getValor();
     }
 
     public void imprimeLocalizacao() {
-        System.out.println("LOCALIZACAO:" + localizacao);
+        System.out.println("LOCALIZACAO: " + localizacao);
     }
 
     public String getLocalizacao() {
