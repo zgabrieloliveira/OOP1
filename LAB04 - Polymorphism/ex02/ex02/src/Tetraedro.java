@@ -25,7 +25,7 @@ public class Tetraedro extends FormaTridimensional {
     }
 
     public double obterVolume() {
-        setVolume((1/3)*((base*altura)/2)*altura);
+        setVolume(((base*altura)/2)*altura/3);
         return getVolume();
     }
 
