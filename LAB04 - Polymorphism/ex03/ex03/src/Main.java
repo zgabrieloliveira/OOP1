@@ -8,11 +8,10 @@ public class Main {
                 estudantes[1] = new EstudanteMestrado("Mestrando", "Tibery, Uberlandia", "Medicina", "Linha X", "Tipo", "Titulo");
                 estudantes[2] = new EstudanteDoutorado("Doutorando", "Saraiva, Uberlandia", "Ciencia da Computacao", "Redes de Computadores", "Titulo da Tese");
 
-                System.out.println("-----------------------------------------");
-                System.out.println("\nINFORMACOES DE TODOS ALUNOS\n");
+                System.out.println("\nINFORMACOES DE TODOS ALUNOS:\n");
                 instituicao.showInfo(estudantes);
                 System.out.println("-----------------------------------------");
-                System.out.println("\nQUANTIDADE DE ALUNOS\n");
+                System.out.println("\nQUANTIDADE DE ALUNOS:\n");
                 instituicao.registerCounter(estudantes);
                 System.out.println("-----------------------------------------");
 
@@ -26,11 +25,10 @@ public class Main {
                         }
                 }
 
-                System.out.println("\nINFORMACOES DE ALUNOS GRADUADOS\n");
+                System.out.println("\nINFORMACOES DE ALUNOS GRADUADOS:\n");
                 for (Estudante i : graduados) {
                         if (i != null)
                                 ((EstudantePosGrad)i).print();
                 }
-
         }
 }
